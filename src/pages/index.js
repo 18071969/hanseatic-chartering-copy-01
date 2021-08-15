@@ -11,6 +11,7 @@ import Page from './[...slug]';
 
 export async function getStaticProps({ params }) {
     console.log('Page [index] getStaticProps, params: ', params);
+    console.log('Page HC index.js);
     const props = await sourcebitDataClient.getStaticPropsForPageAtPath('/');
     return { props };
 }
